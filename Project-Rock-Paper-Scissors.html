@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Rock Paper Scissors</title>
+</head>
+<body>
+    <script>
+        console.log('Test')
+        function computerPlay(){
+            let args =['Rock','Paper','Scissors']
+            let random = args[Math.floor(Math.random() * args.length)].toLowerCase();
+            // console.log(random)
+            return random;
+        }
+
+function playRound(playerSelection, computerSelection){
+        playerSelection = window.prompt('Take your chances mate', 'Eh');
+        let pS = playerSelection.toLowerCase();
+        computerSelection = computerPlay();
+        if(pS === computerSelection){
+return 'You lose bro, I win!'
+        }else{
+            return 'You win mate, i lose!'
+        }
+        // return pS;
+}
+
+function game(){
+   console.log(playRound());
+   console.log(playRound());
+   console.log(playRound());
+   console.log(playRound());
+   console.log(playRound());
+   
+
+//    console.log(playRound())
+//    console.log(playRound())
+//    console.log(playRound())
+//    console.log(playRound())
+//    console.log(playRound())
+
+}
+
+// console.log(playRound('Scissors'));
+// console.log(playRound('paper'));
+// console.log(playRound('rock'));
+
+console.log(game());
+    </script>
+</body>
+</html>
